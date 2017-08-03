@@ -40,8 +40,8 @@ def buildJavaPath():
         print ('JDK already exists !')
         return
 
-    # if net and nex:
-    #     os.system(cmd[0])
+    if net and nex:
+        os.system(cmd[0])
 
     jdk_size = getsize('jdk1.8.tar.gz')
     if jdk_size < 180000000:
