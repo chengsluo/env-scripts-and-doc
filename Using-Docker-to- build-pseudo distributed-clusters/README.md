@@ -130,50 +130,5 @@
 3. 中间不要瞎搞(0_0)
 
 
-# 需要了解的一些基本操作
 
-* 拉取最新Centos基础镜像
-    ```
-    docker pull centos
-    ```
-* 查看镜像状况
-    ```
-    docker images
-    ```
-* 查看容器状况
-    ```
-    docker ps -a
-    ```
-* 再次运行退出的容器
-    ```
-    docker start container_name
-    ```
-* 关闭所有未运行的容器
-    ```
-    docker rm $(docker ps -a -q)
-    ```
-* 强制关闭所有容器
-    ```
-    docker rm  -f $(docker ps -a -q)
-    ```
-* 删除镜像
-    ```
-    docker rmi imname ae5c
-    ```
-* 容器存容器文件
-    ```
-    docker export slave01 > /path/slave01.tar
-    ```
-* 容器存镜像文件
-    ```
-    docker save master > /path/master.tar
-    ```
-* 利用镜像生成容器，最好在这里映射。
-    ```
-    docker run   -d -P -p 50070:50070 -p 8088:8088  --name container_name -h container_name --add-host slave01:172.17.0.3  image_name
-    ```
-* 登录正在运行的容器
-    ```
-    docker exec -it container_name /bin/bash
-    ```
 
