@@ -1,0 +1,7 @@
+.idea/
+.idea/*
+Using-Docker-to-build-pseudo-distributed-clusters/scala-2.11.8.tgz
+Using-Docker-to-build-pseudo-distributed-clusters/spark-2.0.1-bin-hadoop2.7.tgz
+Using-Docker-to-build-pseudo-distributed-clusters/jdk-8u131-linux-x64.tar.gz
+Using-Docker-to-build-pseudo-distributed-clusters/jdk-8u101-linux-x64.tar.gz
+Using-Docker-to-build-pseudo-distributed-clusters/hadoop-2.7.3.tar.gz
